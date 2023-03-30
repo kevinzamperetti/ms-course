@@ -17,9 +17,6 @@ public class PaymentService {
 
 		Worker worker = workerFeignClient.findById(workerId).getBody();		
 		
-		if (worker == null) {
-			return null;
-		}
 		return new Payment(worker.getName(), worker.getDailyIncome(), days);
 		
 	}
