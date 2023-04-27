@@ -22,6 +22,7 @@ public class HrConfigServerApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		//Used to test environment variables reading
 		//System.out.println("GITHUB_USER = " + username + " - GITHUBPASS = " + password);
 	}
 
